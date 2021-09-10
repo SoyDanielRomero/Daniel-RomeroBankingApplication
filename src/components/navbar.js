@@ -1,5 +1,3 @@
-import { Button } from 'react';
-
 function NavBar() {
   return (
     <>

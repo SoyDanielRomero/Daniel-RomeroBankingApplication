@@ -11,12 +11,12 @@ function Login() {
       console.log('new user email2: ', email);
       if (user.email === email) {
         if (user.password === password) {
-          user.loged = true;
+          return (user.loged = true);
         } else {
-          alert('Wrong Password');
+          return alert('Wrong Password');
         }
       } else {
-        alert('Wrong Email');
+        return alert('Wrong Email');
       }
     });
   }

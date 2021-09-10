@@ -9,7 +9,7 @@ function BankForm({
   hideEmail,
   hidePassword,
   hideAmount,
-  hideBalance,
+  // hideBalance,
   handleButton,
   handle,
   successButton,
@@ -20,7 +20,7 @@ function BankForm({
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [amount, setAmount] = React.useState(0);
-  const [balance, setBalance] = React.useState(0);
+  // const [balance, setBalance] = React.useState(0);
   const [loged, setLoged] = React.useState('');
   const ctx = React.useContext(UserContext);
 
@@ -63,9 +63,10 @@ function BankForm({
       console.log('user email: ', user.email);
       console.log('email: ', email);
       if (user.email === email[0].email) {
-        user.loged = false;
-        console.log('loged: ', user.loged);
+        setLoged(false);
+        return loged;
       }
+      return loged;
     });
   }
   return (

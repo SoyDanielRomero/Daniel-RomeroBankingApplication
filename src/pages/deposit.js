@@ -1,21 +1,23 @@
 import React from 'react';
 import BankForm from '../components/bankform';
-import { UserContext } from '../context';
+// import { UserContext } from '../context';
 
 function Deposit() {
-  const ctx = React.useContext(UserContext);
+  // const ctx = React.useContext(UserContext);
 
   function deposit(name, email, password, loged, amount) {
-    ctx.users.filter((user) => {
-      console.log('user.loged', user.loged);
-      if (user.loged === false) {
-        alert('Please Login first');
-        window.location.assign('/assets/projects/coding/badbank/#/login/');
-      } else {
-        let currentBalance = user.balance;
-        user.balance = Number(currentBalance) + Number(amount);
-      }
-    });
+    // ctx.users.filter((user) => {
+    //   console.log('user.loged', user.loged);
+    //   if (user.loged === false) {
+    //     alert('Please Login first');
+    //     return window.location.assign(
+    //       '/assets/projects/coding/badbank/#/login/'
+    //     );
+    //   } else {
+    //     let currentBalance = user.balance;
+    //     return (user.balance = Number(currentBalance) + Number(amount));
+    //   }
+    // });
   }
   return (
     <div className='container d-flex justify-content-center'>

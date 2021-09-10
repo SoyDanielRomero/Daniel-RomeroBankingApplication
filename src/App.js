@@ -7,13 +7,7 @@ import Deposit from './pages/deposit';
 import Login from './components/login';
 import Balance from './components/balance';
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  HashRouter,
-} from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import { UserContext } from './context';
 
 function App() {
