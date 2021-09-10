@@ -19,7 +19,9 @@ import { UserContext } from './context';
 function App() {
   return (
     <HashRouter>
-      <NavBar />
+      <div className='d-flex justify-content-around pl-5 container'>
+        <NavBar />
+      </div>
       <div className='d-flex justify-content-center mt-5 container'>
         <UserContext.Provider
           value={{

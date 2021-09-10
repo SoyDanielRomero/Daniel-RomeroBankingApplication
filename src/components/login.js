@@ -21,7 +21,7 @@ function Login() {
     });
   }
   return (
-    <div className='container'>
+    <div className='container d-flex justify-content-center'>
       <BankForm
         bgcolor='warning'
         header='Create Account'

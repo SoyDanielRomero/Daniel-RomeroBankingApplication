@@ -18,7 +18,7 @@ function Deposit() {
     });
   }
   return (
-    <div className='container'>
+    <div className='container d-flex justify-content-center'>
       <BankForm
         bgcolor='success'
         header='Deposit Form'

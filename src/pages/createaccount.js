@@ -8,7 +8,7 @@ function CreateAccount() {
     ctx.users.push({ name, email, password, balance: 100, loged: false });
   }
   return (
-    <div className='container'>
+    <div className='container d-flex justify-content-center'>
       <BankForm
         bgcolor='primary'
         header='Create Account'

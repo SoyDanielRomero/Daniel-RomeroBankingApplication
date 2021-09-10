@@ -17,7 +17,7 @@ function Withdraw() {
     });
   }
   return (
-    <div className='container'>
+    <div className='container d-flex justify-content-center'>
       <BankForm
         bgcolor='danger'
         header='Withdraw Form'

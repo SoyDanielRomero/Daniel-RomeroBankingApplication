@@ -5,9 +5,9 @@ function Home() {
   return (
     <Card
       txtcolor='black'
-      header='BadBank Landing Page'
-      title='Welcome to BadBank App'
-      text='You can use this app'
+      header='Welcome to Fanky'
+      title='A fake bank app'
+      text='Send me an email if you liked this app'
       body={<p> Hola!</p>}
     />
   );
