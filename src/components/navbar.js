@@ -45,10 +45,8 @@ function NavBar() {
             Fanky
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse
-            id='basic-navbar-nav'
-            className='d-flex justify-content-center'>
-            <Nav defaultActiveKey='#/' fill variant='tabs'>
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav defaultActiveKey='#/'>
               <Nav.Link href='#/'>
                 <button className='btn btn-primary'>Home</button>
               </Nav.Link>
