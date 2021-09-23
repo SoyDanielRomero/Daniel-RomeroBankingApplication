@@ -52,7 +52,14 @@ function BankForm({
       if (!validate(email, 'Empty Email')) return;
     }
     if (!hidePassword) {
-      if (!validate(password, 'Empty Password')) return;
+      if (!validate(password, 'Empty Password')) {
+        return;
+      }
+      if (password.length < 8) {
+        return setErrormsg('Error: Password minimum legth is 8 Characters');
+      } else {
+        setErrormsg('');
+      }
     }
     if (!hideAmount) {
       if (!validate(amount, 'Empty Amount')) return;
@@ -64,19 +71,13 @@ function BankForm({
   function validate(field, label) {
     if (!field) {
       setErrormsg('Error: missing ' + label);
-      setTimeout(() => setErrormsg(''), 3000);
+      // setTimeout(() => setErrormsg(''), 3000);
       return false;
     }
     return true;
   }
 
   function handleAction() {
-    console.log('PW: ', password.length);
-    if (password.length < 8) {
-      alert('Password must be longer than 8 characters');
-      clearform();
-      return;
-    }
     handle(name, email, password, loged, amount);
     setShow(false);
   }
@@ -183,11 +184,8 @@ function BankForm({
                     const re = /^[0-9\b]+$/;
                     if (!re.test(e.currentTarget.value)) {
                       alert('Use numbers only in the Ammount Box');
-                      e.currentTarget.value = 0;
+                      e.currentTarget.value = '';
                     }
-                    // e.currentTarget.setCustomValidity(
-                    //   'Transaction Amount Must Be a Number 0-9'
-                    // );
                     return setAmount(e.currentTarget.value);
                   }}
                 />

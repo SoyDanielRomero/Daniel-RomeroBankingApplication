@@ -11,7 +11,7 @@ function ContextProvider({ children }) {
     {
       name: 'Kenshin Himura',
       email: 'rurouni@mit.edu',
-      password: 'kaoru',
+      password: '12345678',
       balance: 100,
       loged: false,
     },
