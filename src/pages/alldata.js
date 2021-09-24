@@ -8,7 +8,8 @@ function AllData() {
   return (
     <>
       <Card
-        txtcolor='black'
+        bgcolor='dark'
+        txtcolor='white'
         header='Fanky All Data Page'
         title='Review all users data'
         text=''
@@ -19,7 +20,9 @@ function AllData() {
               striped
               bordered
               hover
-              size='sm'>
+              size='lg'
+              variant='dark'
+              responsive>
               <thead>
                 <tr>
                   <th scope='col'>#</th>
