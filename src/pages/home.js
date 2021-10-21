@@ -21,7 +21,9 @@ function Home() {
             className='ms-4'
           />
           <br />
-          <p> Please create an account in order to test the app</p>
+          <p className='text-center'>
+            Please create an account in order to test the app
+          </p>
         </>
       }
     />
